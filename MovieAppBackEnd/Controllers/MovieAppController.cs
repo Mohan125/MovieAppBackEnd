@@ -59,7 +59,7 @@ namespace MovieAppBackEnd.Controllers
         [HttpGet("moviesSample")]
         public string Getmovies()
         {
-            return "mohan";
+            return ctx.MovieLists.FirstOrDefault().ToString();
         }
 
 
