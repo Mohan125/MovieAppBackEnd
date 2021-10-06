@@ -50,7 +50,7 @@ namespace MovieAppBackEnd.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("movies")]
         public IEnumerable<MovieList> GetMovies()
         {
             return ctx.MovieLists;
