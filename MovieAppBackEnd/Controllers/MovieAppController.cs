@@ -56,6 +56,12 @@ namespace MovieAppBackEnd.Controllers
             return ctx.MovieLists;
         }
 
+        [HttpGet("moviesSample")]
+        public string Getmovies()
+        {
+            return "mohan";
+        }
+
 
         [HttpGet("movies/movie")]
         public MovieList GetMovieByName(string title)
