@@ -61,6 +61,12 @@ namespace MovieAppBackEnd.Controllers
         {
             return ctx.MovieLists.FirstOrDefault().ToString();
         }
+        [HttpGet("moviesSampleHardCoded")]
+        public string getmovies()
+        {
+            return "movie";
+        }
+
 
 
         [HttpGet("movies/movie")]
